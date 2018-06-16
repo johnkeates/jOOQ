@@ -104,6 +104,11 @@ public enum SQLDialect {
     FIREBIRD_3_0("Firebird", false, FIREBIRD, FIREBIRD_2_5),
 
     /**
+     * The Filemaker dialect family.
+     */
+    FILEMAKER("FILEMAKER", false),
+
+    /**
      * The H2 dialect family.
      */
     H2("H2", false),
@@ -616,6 +621,7 @@ public enum SQLDialect {
 
 
                 case DERBY:     return "Derby";
+                case FILEMAKER:  return "FILEMAKER";
                 case H2:        return "H2";
                 case HSQLDB:    return "HSQL";
                 case MARIADB:
@@ -667,6 +673,7 @@ public enum SQLDialect {
 
                 case CUBRID:        return "org.hibernate.dialect.CUBRIDDialect";
                 case DERBY:         return "org.hibernate.dialect.DerbyTenSevenDialect";
+                case FILEMAKER:     return "nl.keates.filemaker.hibernate.dialect";
                 case FIREBIRD:      return "org.hibernate.dialect.FirebirdDialect";
                 case H2:            return "org.hibernate.dialect.H2Dialect";
                 case HSQLDB:        return "org.hibernate.dialect.HSQLDialect";

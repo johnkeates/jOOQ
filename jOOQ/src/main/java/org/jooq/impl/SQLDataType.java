@@ -69,6 +69,7 @@ import org.jooq.types.YearToMonth;
 import org.jooq.util.cubrid.CUBRIDDataType;
 // ...
 import org.jooq.util.derby.DerbyDataType;
+import org.jooq.util.filemaker.FilemakerDataType;
 import org.jooq.util.firebird.FirebirdDataType;
 import org.jooq.util.h2.H2DataType;
 // ...
@@ -607,6 +608,7 @@ public final class SQLDataType {
             Class.forName(CUBRIDDataType.class.getName());
             Class.forName(DerbyDataType.class.getName());
             Class.forName(FirebirdDataType.class.getName());
+            Class.forName(FilemakerDataType.class.getName());
             Class.forName(H2DataType.class.getName());
             Class.forName(HSQLDBDataType.class.getName());
             Class.forName(MariaDBDataType.class.getName());
